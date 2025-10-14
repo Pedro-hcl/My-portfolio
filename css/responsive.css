@@ -1,0 +1,36 @@
+
+@media (max-width: 1150px) {
+    .certificate-list {
+    display: grid;
+  }
+}
+
+@media (max-width: 870px){
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .me,
+  .projects,
+  .skills,
+  .certificates {
+    padding: 0 var(--spacing-md);
+  }
+  .certificate-list {
+    display: grid;
+  }
+}
