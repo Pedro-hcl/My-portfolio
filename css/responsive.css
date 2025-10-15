@@ -1,11 +1,31 @@
-
+@media (max-height: 750px) {
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .subtitle-contact {
+    font-size: 25px;
+    margin-right: var(--spacing-lg);
+    margin-top: 4px;
+    margin-bottom: var(--spacing-sm);
+  }
+  .contact-list {
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+  .logo {
+  width: 30px;
+  height: 30px;
+}
+}
 @media (max-width: 1150px) {
-    .certificate-list {
+  .certificate-list {
     display: grid;
   }
 }
 
-@media (max-width: 870px){
+@media (max-width: 870px) {
   .header {
     flex-direction: column;
     text-align: center;
@@ -29,8 +49,5 @@
   .skills,
   .certificates {
     padding: 0 var(--spacing-md);
-  }
-  .certificate-list {
-    display: grid;
   }
 }

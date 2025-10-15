@@ -10,6 +10,7 @@
   --text-color: #f0f0f0;
   --text-light: #b0b0d0;
   --border-radius: 16px;
+  --border-radius-md: 20px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 32px;
@@ -36,10 +37,13 @@ body {
 
 /* Layout */
 .header,
-.main,
-.footer {
+.main {
   margin: 0 auto;
   padding: var(--spacing-lg) var(--spacing-md);
+}
+.footer {
+  margin: 0 auto;
+  padding: 5px 5px;
 }
 
 /* Header */
@@ -69,7 +73,7 @@ body {
 }
 
 .title {
-  font-size: 2, 5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   background: linear-gradient(90deg, #a965e9, #7620b3);
   -webkit-background-clip: text;
@@ -207,7 +211,7 @@ body {
 }
 .project-item {
   background: rgba(26, 26, 46, 0.6);
-  line-height: 1, 7;
+  line-height: 1.7;
   backdrop-filter: blur(8px);
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
@@ -232,7 +236,7 @@ body {
   margin: var(--spacing-md) 0;
   color: var(--text-light);
   line-height: 1.6;
-  max-width: 80vh;
+  max-width: 35vw;
   max-height: 80vh;
   overflow: auto;
 }
@@ -269,7 +273,7 @@ body {
   font-size: 0.95rem;
   border: 1px solid rgba(138, 43, 226, 0.2);
   transition: var(--transition);
-  font-size: 18px;
+
 }
 
 .skill-item:hover {
@@ -328,23 +332,25 @@ body {
 
 /* Footer */
 .footer {
-  padding-top: var(--spacing-lg);
   text-align: end;
   border-top: 1px solid rgba(138, 43, 226, 0.1);
+  background-color: #1a1a2e;
 }
 
+.social {
+  flex-direction: column;
+}
 .contact-list {
   display: flex;
   justify-content: end;
   gap: var(--spacing-lg);
-  margin-top: var(--spacing-md);
-  flex-wrap: wrap;
+  margin-bottom: var(--spacing-md);
 }
 
 .logo {
   width: 35px;
   height: 35px;
-  border-radius: 20px;
+  border-radius: var(--border-radius-md);
   transition: var(--transition);
   filter: grayscale(100%) brightness(1.2);
 }
@@ -356,20 +362,13 @@ body {
   box-shadow: 0 10px 25px rgba(188, 100, 252, 0.3);
 }
 
-.footer {
-  padding-top: var(--spacing-lg);
-  text-align: end;
-  height: 18vh;
-  background-color: #1a1a2e;
-}
-
 .subtitle-contact {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-sm);
   margin-right: 80px;
-  font-weight: 700px;
   text-align: end;
 }
+
 /* Animação de entrada ao rolar */
 @keyframes fadeInUp {
   to {
@@ -377,4 +376,3 @@ body {
     transform: translateY(0);
   }
 }
-
